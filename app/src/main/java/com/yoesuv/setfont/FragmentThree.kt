@@ -9,8 +9,19 @@ import com.yoesuv.setfont.databinding.FragmentThreeBinding
 
 class FragmentThree: Fragment() {
 
+    private lateinit var binding: FragmentThreeBinding
+    private lateinit var myAdapter: AppPagerAdapter
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return FragmentThreeBinding.inflate(inflater, container, false).root
+        binding= FragmentThreeBinding.inflate(inflater, container, false)
+        return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        myAdapter = AppPagerAdapter(childFragmentManager)
+        binding.viewPager.adapter = myAdapter
+        binding.tabLayout.setupWithViewPager(binding.viewPager)
     }
 
 }
