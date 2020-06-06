@@ -16,6 +16,12 @@
         android:id="@+id/fragmentTwo"
         android:label="@string/fragment_two"
         android:name="com.yoesuv.setfont.FragmentTwo"
-        tools:layout="@layout/fragment_one"/>
+        tools:layout="@layout/fragment_two"/>
+
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:label="@string/fragment_three"
+        android:name="com.yoesuv.setfont.FragmentThree"
+        tools:layout="@layout/fragment_three"/>
 
 </navigation>

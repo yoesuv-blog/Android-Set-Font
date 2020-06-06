@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">Set Font</string>
 
+    <string name="menu_one">One</string>
+    <string name="menu_two">Two</string>
+    <string name="menu_three">Three</string>
+
     <string name="fragment_one">Fragment One</string>
     <string name="fragment_two">Fragment Two</string>
+    <string name="fragment_three">Fragment Three</string>
 
     <string name="lorem_random">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
 </resources>
